@@ -1,12 +1,47 @@
-# React + Vite
+# @multiversx/template-dapp-reactjs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **MultiversX dApp Template**, built using [React.js](https://reactjs.org/)
 
-Currently, two official plugins are available:
+It's a basic implementation of [@multiversx/sdk-dapp](https://www.npmjs.com/package/@multiversx/sdk-dapp), providing the basics for MultiversX authentication and TX signing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
 
-## Expanding the ESLint configuration
+- Node.js version 16.20.0+
+- Npm version 8.19.4+
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Step 1. Install modules
+
+From a terminal, navigate to the project folder and run:
+
+```bash
+yarn install
+```
+
+### Step 2. Running in development mode
+
+In the project folder run:
+
+```bash
+yarn start-devnet
+yarn start-testnet
+yarn start-mainnet
+```
+
+This will start the React app in development mode, using the configs found in the `vite.config.ts` file.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### Step 3. Build for testing and production use
+
+A build of the app is necessary to deploy for testing purposes or for production use.
+To build the project run:
+
+```bash
+yarn build-devnet
+yarn build-testnet
+yarn build-mainnet
+```
