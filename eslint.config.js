@@ -41,7 +41,7 @@ export default [
       'import/resolver': {
         alias: {
           map: [['@', './src']],
-          extensions: ['.js', '.jsx']
+          extensions: ['.js', '.jsx', '.ts', '.tsx']
         }
       }
     },
@@ -51,7 +51,12 @@ export default [
       ...importPlugin.configs.recommended.rules,
 
       // Custom rules
-      'import/no-unresolved': ['error', { ignore: ['@multiversx/.*'] }],
+      // Ignore @multiversx deep subpath imports and Vite's `?react` SVG
+      // virtual modules, neither of which the static resolver can follow.
+      'import/no-unresolved': [
+        'error',
+        { ignore: ['@multiversx/.*', '\\.svg(\\?.*)?$'] }
+      ],
       'sort-exports/sort-exports': 'error',
       'sort-imports': [
         'error',
@@ -103,6 +108,19 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/jsx-no-target-blank': ['error', { allowReferrer: true }],
       'react/no-unescaped-entities': 'off'
+    }
+  },
+  {
+    // Build-tool config files import the dist bundles of Vite plugins, whose
+    // CJS/ESM interop shape trips up eslint-plugin-import's static analysis
+    // (false-positive "no default export"/parse errors). These imports are
+    // resolved correctly by Vite at runtime.
+    files: ['*.config.{js,cjs}'],
+    rules: {
+      'import/default': 'off',
+      'import/namespace': 'off',
+      'import/no-named-as-default': 'off',
+      'import/no-named-as-default-member': 'off'
     }
   },
   prettierConfig

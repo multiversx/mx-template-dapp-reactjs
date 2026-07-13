@@ -6,8 +6,8 @@ It's a basic implementation of [@multiversx/sdk-dapp](https://www.npmjs.com/pack
 
 ## Requirements
 
-- Node.js version 16.20.0+
-- Npm version 8.19.4+
+- Node.js version 24+
+- pnpm version 11+
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ It's a basic implementation of [@multiversx/sdk-dapp](https://www.npmjs.com/pack
 From a terminal, navigate to the project folder and run:
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ### Step 2. Running in development mode
@@ -24,9 +24,9 @@ yarn install
 In the project folder run:
 
 ```bash
-yarn start-devnet
-yarn start-testnet
-yarn start-mainnet
+pnpm start-devnet
+pnpm start-testnet
+pnpm start-mainnet
 ```
 
 This will start the React app in development mode, using the configs found in the `vite.config.ts` file.
@@ -41,7 +41,7 @@ A build of the app is necessary to deploy for testing purposes or for production
 To build the project run:
 
 ```bash
-yarn build-devnet
-yarn build-testnet
-yarn build-mainnet
+pnpm build-devnet
+pnpm build-testnet
+pnpm build-mainnet
 ```
