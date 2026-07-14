@@ -4,7 +4,7 @@ Guidance for AI agents (and humans) working with code in this repository.
 
 ## What this is
 
-The MultiversX dApp Template for React.js — a reference implementation of [@multiversx/sdk-dapp](https://www.npmjs.com/package/@multiversx/sdk-dapp) demonstrating MultiversX wallet authentication and transaction signing. The source is plain JavaScript/JSX (no `tsconfig.json`); the one `.tsx` file is `Header/components/GitHubButton.tsx`.
+The MultiversX dApp Template for React.js — a reference implementation of [@multiversx/sdk-dapp](https://www.npmjs.com/package/@multiversx/sdk-dapp) demonstrating MultiversX wallet authentication and transaction signing. The source is plain JavaScript/JSX (no `tsconfig.json`).
 
 Toolchain: **Node 24+**, **pnpm 11** (there is a `pnpm-lock.yaml` — use pnpm, not npm/yarn), Vite 8 (Rolldown).
 
