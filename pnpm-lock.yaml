@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@ledgerhq/devices': 8.15.0
-
 importers:
 
   .:
@@ -27,8 +24,8 @@ importers:
         specifier: ^15.4.1
         version: 15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5)
       '@multiversx/sdk-dapp':
-        specifier: ^5.7.0
-        version: 5.7.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(@multiversx/sdk-dapp-utils@3.1.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(bignumber.js@9.3.1))(@types/react@19.2.17)(axios@1.18.1)(bignumber.js@9.3.1)(protobufjs@7.6.5)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue@3.5.39)
+        specifier: ^5.7.1
+        version: 5.7.1(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(@multiversx/sdk-dapp-utils@3.1.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(bignumber.js@9.3.1))(@types/react@19.2.17)(axios@1.18.1)(bignumber.js@9.3.1)(protobufjs@7.6.5)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue@3.5.39)
       '@multiversx/sdk-dapp-ui':
         specifier: ^0.1.24
         version: 0.1.24(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue@3.5.39)
@@ -71,7 +68,7 @@ importers:
         version: 6.0.3(vite@8.1.4(@types/node@26.1.1)(jiti@1.21.7))
       autoprefixer:
         specifier: ^10.5.2
-        version: 10.5.2(postcss@8.5.17)
+        version: 10.5.2(postcss@8.5.19)
       eslint:
         specifier: ^9.39.4
         version: 9.39.5(jiti@1.21.7)
@@ -104,7 +101,7 @@ importers:
         version: 16.5.0
       postcss:
         specifier: ^8.5.16
-        version: 8.5.17
+        version: 8.5.19
       prettier:
         specifier: ^3.9.4
         version: 3.9.5
@@ -318,26 +315,20 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@ledgerhq/devices@8.15.0':
-    resolution: {integrity: sha512-pHrjZzC81ER6BDKjIzTzubLynFzS15CQ7EQeEfrbrSisc3BFLGrnC7+cXdGWK7eTRAkwH7Uw3M2QM/mbjfhwlw==}
-
-  '@ledgerhq/errors@6.12.6':
-    resolution: {integrity: sha512-D+r2B09vaRO06wfGoss+rNgwqWSoK0bCtsaJWzlD2hv1zxTtucqVtSztbRFypIqxWTCb3ix5Nh2dWHEJVTp2Xw==}
+  '@ledgerhq/devices@8.16.0':
+    resolution: {integrity: sha512-brXLPzkvGM3D5YNsWQ25P5G4SmWdSNBed9W8wKoOIRLGdRfvE+bg9mzFty0iZ+aRLBkLoXwX7xKIL9zUi6LBKQ==}
 
   '@ledgerhq/errors@6.37.0':
     resolution: {integrity: sha512-T5yiKI5UX7ugeocdTF3TUsCIN2BH41Bio4ZeN410YFjFOf3es08n/5JyMzzKwzRgP0blG3HfBf7s7vJKqCSAeg==}
 
-  '@ledgerhq/hw-transport-web-ble@6.28.6':
-    resolution: {integrity: sha512-SsseU5T4ePhdvFdwUOsF207gyMgiHyymvRAV66/hpHCd0+m/81kV8nZneeD3Z1pG0XPG+tPlF90r7nLwtUoiXw==}
+  '@ledgerhq/hw-transport-web-ble@6.35.0':
+    resolution: {integrity: sha512-nc4FAWZ0GtZO9ydDCKlvDzOEVdUXlGL/0nWPIOeCE5xxuXug5iR0uhC4Bl0qwlUCEnhewmXwLJsCFcCdr/N4QQ==}
 
-  '@ledgerhq/hw-transport-webhid@6.28.6':
-    resolution: {integrity: sha512-npU1mgL97KovpTUgcdORoOZ7eVFgwCA7zt0MpgUGUMRNJWDgCFsJslx7KrVXlCGOg87gLfDojreIre502I5pYg==}
+  '@ledgerhq/hw-transport-webhid@6.36.0':
+    resolution: {integrity: sha512-1mKWm3LyGOgmaYlAiqbmaGoupOZHbj2Kow5sXLxKZzQa4kFvQuUdinYOWhs7T8hqJyAkz9WlHYyKM7aIs8kjNg==}
 
-  '@ledgerhq/hw-transport-webusb@6.28.6':
-    resolution: {integrity: sha512-rzICsvhcFcL4wSAvRPe+b9EEWB8cxj6yWy3FZdfs7ufi/0muNpFXWckWv1TC34em55sGXu2cMcwMKXg/O/Lc0Q==}
-
-  '@ledgerhq/hw-transport@6.28.8':
-    resolution: {integrity: sha512-XxQVl4htd018u/M66r0iu5nlHi+J6QfdPsORzDF6N39jaz+tMqItb7tUlXM/isggcuS5lc7GJo7NOuJ8rvHZaQ==}
+  '@ledgerhq/hw-transport-webusb@6.35.0':
+    resolution: {integrity: sha512-8fBNqzQnyR3pKLE2AVxCAc54nHMEKz9/eAYLDENVRuDp+A23lBJYWErxSyoZ6riCM19jIhRvtHjB0o4PXpa2tg==}
 
   '@ledgerhq/hw-transport@6.35.5':
     resolution: {integrity: sha512-P4+wtLewLWgxPtIb90h5kjpzXVlC6f4IBQBmvowVFkInvZt34ffXkX7wa5KfMzu4l3cqCcpNSqtPSCMp+0vuqg==}
@@ -378,8 +369,8 @@ packages:
       '@multiversx/sdk-core': ^14.0.0 || ^15.0.0
       bignumber.js: ^9.x
 
-  '@multiversx/sdk-dapp@5.7.0':
-    resolution: {integrity: sha512-DIjRzkp9ebZ+iR8yNVCTzyHI5DKU+jxpIe6NN7gM+L7bfRqopUD14VxmAbLXxI3J5ub91hKXbr2XHI/veIw7Og==}
+  '@multiversx/sdk-dapp@5.7.1':
+    resolution: {integrity: sha512-Tzy5xkKVrwTjylJ31AXVRWPQFtEyb2fyJTUcM8gz8dEqe/VpYH1KzCjbUVZweRcd3K9+/h83R+gT5SLmiPAwOw==}
     peerDependencies:
       '@multiversx/sdk-core': ^14.x || ^15.x
       '@multiversx/sdk-dapp-utils': ^3.x
@@ -392,8 +383,8 @@ packages:
     peerDependencies:
       '@multiversx/sdk-core': ^14.0.0 || ^15.0.0
 
-  '@multiversx/sdk-hw-provider@8.1.2':
-    resolution: {integrity: sha512-Q/cIOi+3JiZ4/FV/608kEcaQAprv9NP2GmuxONdPW5YACIHGdS5WILsQTL6xqDxBsNEfN71DbbNHKEr7pqnq6Q==}
+  '@multiversx/sdk-hw-provider@8.2.0':
+    resolution: {integrity: sha512-WSPv72ykmPj/H9swxkD8lBbOSjnFAClGMxKntgDy5L9Uj3nUrEDbJRo0btW9ocJxRCVmkkcNoy2ze/Vp2AZngQ==}
     peerDependencies:
       '@multiversx/sdk-core': ^14.0.0 || ^15.0.0
 
@@ -2540,8 +2531,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.17:
-    resolution: {integrity: sha512-J7EF+8X+CzRPaJPOv9Ck2wNWJvGnnl3PcNPAdGg6GTLjyVpyQ0yATMSXRFRV01BviT/9Gwuc3rjEyJbDJG9a4w==}
+  postcss@8.5.19:
+    resolution: {integrity: sha512-Mz8SaolMd8nB+G13WkORcxQKHZ/NE4xXevtkJHVuG+guo9/wYKlIMTKAqGdEmYOXR2ijPjTYNHssizdaVSUNdQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -3511,48 +3502,37 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@ledgerhq/devices@8.15.0':
+  '@ledgerhq/devices@8.16.0':
     dependencies:
-      '@ledgerhq/errors': 6.37.0
-      '@ledgerhq/logs': 6.17.0
-      rxjs: 7.8.2
       semver: 7.7.3
-
-  '@ledgerhq/errors@6.12.6': {}
 
   '@ledgerhq/errors@6.37.0': {}
 
-  '@ledgerhq/hw-transport-web-ble@6.28.6':
+  '@ledgerhq/hw-transport-web-ble@6.35.0':
     dependencies:
-      '@ledgerhq/devices': 8.15.0
+      '@ledgerhq/devices': 8.16.0
       '@ledgerhq/errors': 6.37.0
       '@ledgerhq/hw-transport': 6.35.5
       '@ledgerhq/logs': 6.17.0
       rxjs: 7.8.2
 
-  '@ledgerhq/hw-transport-webhid@6.28.6':
+  '@ledgerhq/hw-transport-webhid@6.36.0':
     dependencies:
-      '@ledgerhq/devices': 8.15.0
+      '@ledgerhq/devices': 8.16.0
       '@ledgerhq/errors': 6.37.0
       '@ledgerhq/hw-transport': 6.35.5
       '@ledgerhq/logs': 6.17.0
 
-  '@ledgerhq/hw-transport-webusb@6.28.6':
+  '@ledgerhq/hw-transport-webusb@6.35.0':
     dependencies:
-      '@ledgerhq/devices': 8.15.0
+      '@ledgerhq/devices': 8.16.0
       '@ledgerhq/errors': 6.37.0
       '@ledgerhq/hw-transport': 6.35.5
       '@ledgerhq/logs': 6.17.0
-
-  '@ledgerhq/hw-transport@6.28.8':
-    dependencies:
-      '@ledgerhq/devices': 8.15.0
-      '@ledgerhq/errors': 6.37.0
-      events: 3.3.0
 
   '@ledgerhq/hw-transport@6.35.5':
     dependencies:
-      '@ledgerhq/devices': 8.15.0
+      '@ledgerhq/devices': 8.16.0
       '@ledgerhq/errors': 6.37.0
       '@ledgerhq/logs': 6.17.0
       events: 3.3.0
@@ -3619,13 +3599,13 @@ snapshots:
       '@multiversx/sdk-core': 15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5)
       bignumber.js: 9.3.1
 
-  '@multiversx/sdk-dapp@5.7.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(@multiversx/sdk-dapp-utils@3.1.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(bignumber.js@9.3.1))(@types/react@19.2.17)(axios@1.18.1)(bignumber.js@9.3.1)(protobufjs@7.6.5)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue@3.5.39)':
+  '@multiversx/sdk-dapp@5.7.1(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(@multiversx/sdk-dapp-utils@3.1.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(bignumber.js@9.3.1))(@types/react@19.2.17)(axios@1.18.1)(bignumber.js@9.3.1)(protobufjs@7.6.5)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vue@3.5.39)':
     dependencies:
       '@lifeomic/axios-fetch': 3.1.0
       '@multiversx/sdk-core': 15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5)
       '@multiversx/sdk-dapp-utils': 3.1.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))(bignumber.js@9.3.1)
       '@multiversx/sdk-extension-provider': 5.1.2(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))
-      '@multiversx/sdk-hw-provider': 8.1.2(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))
+      '@multiversx/sdk-hw-provider': 8.2.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))
       '@multiversx/sdk-native-auth-client': 2.0.1(axios@1.18.1)
       '@multiversx/sdk-wallet-connect-provider': 6.1.5(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))
       '@multiversx/sdk-web-wallet-cross-window-provider': 3.2.2(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))
@@ -3681,14 +3661,14 @@ snapshots:
     dependencies:
       '@multiversx/sdk-core': 15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5)
 
-  '@multiversx/sdk-hw-provider@8.1.2(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))':
+  '@multiversx/sdk-hw-provider@8.2.0(@multiversx/sdk-core@15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5))':
     dependencies:
-      '@ledgerhq/devices': 8.15.0
-      '@ledgerhq/errors': 6.12.6
-      '@ledgerhq/hw-transport': 6.28.8
-      '@ledgerhq/hw-transport-web-ble': 6.28.6
-      '@ledgerhq/hw-transport-webhid': 6.28.6
-      '@ledgerhq/hw-transport-webusb': 6.28.6
+      '@ledgerhq/devices': 8.16.0
+      '@ledgerhq/errors': 6.37.0
+      '@ledgerhq/hw-transport': 6.35.5
+      '@ledgerhq/hw-transport-web-ble': 6.35.0
+      '@ledgerhq/hw-transport-webhid': 6.36.0
+      '@ledgerhq/hw-transport-webusb': 6.35.0
       '@multiversx/sdk-core': 15.4.1(bignumber.js@9.3.1)(protobufjs@7.6.5)
       buffer: 6.0.3
       platform: 1.3.6
@@ -4113,7 +4093,7 @@ snapshots:
       '@vue/shared': 3.5.39
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.17
+      postcss: 8.5.19
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.39':
@@ -4526,13 +4506,13 @@ snapshots:
 
   atomic-sleep@1.0.0: {}
 
-  autoprefixer@10.5.2(postcss@8.5.17):
+  autoprefixer@10.5.2(postcss@8.5.19):
     dependencies:
       browserslist: 4.28.6
       caniuse-lite: 1.0.30001805
       fraction.js: 5.3.4
       picocolors: 1.1.1
-      postcss: 8.5.17
+      postcss: 8.5.19
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -6167,28 +6147,28 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-import@15.1.0(postcss@8.5.17):
+  postcss-import@15.1.0(postcss@8.5.19):
     dependencies:
-      postcss: 8.5.17
+      postcss: 8.5.19
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.12
 
-  postcss-js@4.1.0(postcss@8.5.17):
+  postcss-js@4.1.0(postcss@8.5.19):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.17
+      postcss: 8.5.19
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.17):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.19):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.17
+      postcss: 8.5.19
 
-  postcss-nested@6.2.0(postcss@8.5.17):
+  postcss-nested@6.2.0(postcss@8.5.19):
     dependencies:
-      postcss: 8.5.17
+      postcss: 8.5.19
       postcss-selector-parser: 6.1.4
 
   postcss-selector-parser@6.1.4:
@@ -6198,7 +6178,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.17:
+  postcss@8.5.19:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -6698,11 +6678,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.17
-      postcss-import: 15.1.0(postcss@8.5.17)
-      postcss-js: 4.1.0(postcss@8.5.17)
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.17)
-      postcss-nested: 6.2.0(postcss@8.5.17)
+      postcss: 8.5.19
+      postcss-import: 15.1.0(postcss@8.5.19)
+      postcss-js: 4.1.0(postcss@8.5.19)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.19)
+      postcss-nested: 6.2.0(postcss@8.5.19)
       postcss-selector-parser: 6.1.4
       resolve: 1.22.12
       sucrase: 3.35.1
@@ -6884,7 +6864,7 @@ snapshots:
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.5
-      postcss: 8.5.17
+      postcss: 8.5.19
       rolldown: 1.1.5
       tinyglobby: 0.2.17
     optionalDependencies:

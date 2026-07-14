@@ -1,15 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from '@/App.jsx';
-import { walletConnectV2ProjectId } from '@/config';
+import { environment, walletConnectV2ProjectId } from '@/config';
 import { initApp } from '@/lib/sdkDapp/sdkDapp.methods';
-import { EnvironmentsEnum } from '@/lib/sdkDapp/sdkDapp.types';
 import './index.css';
 
 const config = {
   storage: { getStorageCallback: () => sessionStorage },
   dAppConfig: {
-    environment: EnvironmentsEnum.devnet,
+    environment,
     transactionTracking: {
       successfulToastLifetime: 5000,
       onSuccess: async (sessionId) => {

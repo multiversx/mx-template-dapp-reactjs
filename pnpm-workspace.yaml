@@ -1,9 +1,5 @@
 allowBuilds:
   keccak: false
   protobufjs: false
-# @ledgerhq/hw-transport@6.35.5 pulls @ledgerhq/devices@8.16.0, which dropped the
-# ble/* and hid-framing subpaths that the sibling web transports (declaring
-# ^8.3.0) still import — breaking the Vite build. 8.15.0 is the last version that
-# ships those subpaths and satisfies every consumer's range, so pin the tree to it.
-overrides:
-  '@ledgerhq/devices': 8.15.0
+minimumReleaseAgeExclude:
+  - '@multiversx/*'
