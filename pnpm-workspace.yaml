@@ -1,0 +1,5 @@
+allowBuilds:
+  keccak: false
+  protobufjs: false
+minimumReleaseAgeExclude:
+  - '@multiversx/*'
