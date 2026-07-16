@@ -1,6 +1,7 @@
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
@@ -12,6 +13,10 @@ export default defineConfig({
         exportType: 'default'
       }
     }),
+
+    nodePolyfills({
+      globals: { Buffer: true, global: true, process: true }
+    }),
     basicSsl()
   ],
   resolve: {
@@ -19,18 +24,12 @@ export default defineConfig({
       '@': '/src'
     }
   },
-  define: {
-    global: 'globalThis'
-  },
   optimizeDeps: {
-    include: [
-      '@multiversx/sdk-dapp',
-      '@multiversx/sdk-core',
-      '@multiversx/sdk-dapp-ui'
-    ]
+    include: ['@multiversx/sdk-core', '@multiversx/sdk-dapp-ui/react']
   },
   server: {
     https: true,
+    port: 3000,
     fs: {
       allow: ['..']
     }
